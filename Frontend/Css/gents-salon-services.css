@@ -1,0 +1,295 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.section 
+{
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    padding: 7px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-top: 80px;
+}
+
+.video-play 
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.video-play>div{
+    width: 50%;
+    height: 100%;
+}
+
+.video-play>div:nth-child(2){
+    height: 100%;
+}
+
+.video-play video{
+    width: 100%;
+}
+
+.hair-styles 
+{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: #fff;
+    padding: 25px;
+}
+
+.hair-styles i 
+{
+    color: #c68200;
+    font-size: 12px;
+}
+
+.beard-section 
+{
+    width: 100%;
+}
+
+.beard-section>div:nth-child(2)
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.beard-section i {
+    color: #c68200;
+    font-size: 12px;
+}
+
+
+.ladies-service-button{ 
+    border: none;
+    padding: 15x 20px;
+    font-size: 17px;
+    background-color: #c68200;
+    color: white;
+}
+
+.book-appointment 
+{
+    width: 100%;
+    padding: 20px;
+    /* background-color: #eee; */
+}
+
+.book-appointment>div:nth-child(1){
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+.book-appointment>div:nth-child(2)
+{
+    width: 70%;
+    margin: auto;
+}
+
+.book-appointment>div:nth-child(2) input, select {
+    width: 45%;
+    height: 2rem;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.book-appointment>div:nth-child(2) input::placeholder{
+    color: black;
+}
+
+.book-appointment>div:nth-child(2) input[type="submit"]
+{
+    background-color: #c68200;
+    color: white;
+    border: none;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+
+.gents-about{
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+.loginPopUp-Show{
+    width: 30%;
+    margin: auto;
+    z-index: 101;
+}
+
+.loginPopUp-Hidden{
+    display: none;
+}
+
+/* ==================================*******soumya css*****============================================================= */
+.app-child-details{
+    width: 60%;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  td {
+    /* width: 100%; */
+    padding: 6px 0px;
+    text-align: left;
+    /* border-bottom: 1px solid #ddd; */
+  }
+  
+  th {
+    /* background-color: #f2f2f2; */
+    font-weight: bold;
+    text-align: left;
+    padding-left: 10px;
+    /* width: 100%; */
+  }
+  
+#appointments-div{
+    margin: auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px 30px;
+}
+.app-child-div{
+    /* background-color: #5a76c1; */
+    background-color: rgb(198,130,0,0.7);
+    /* background-color: #bedae8; */
+    border-radius: 20px;
+    margin:10px;
+    margin-top: 20px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    /* color: aliceblue; */
+}
+.app-child-div>h2{
+    margin-top: 5px;
+}
+.point{
+    /* padding: 3px; */
+    /* background: white; */
+    font-size: 23px;
+    font-weight: 700;
+    color: #252230;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+.text{
+    font-size: 22px;
+    font-weight: 700;
+    color:#fff ;
+}
+.app-child-button{
+    width: 33%;
+    display: flex;
+}
+.app-child-button>button{
+    margin-top: 10px;
+    height: 45px;
+    margin-left: 5px;
+    padding: 10px 2rem;
+    border-radius: 5px;
+    border: none;
+    font-weight: 500;
+    color: whitesmoke;
+}
+.complete-tbn,.approve-btn{
+    background-color: #209f80;
+
+}
+.complete-tbn:hover,.approve-btn:hover{
+    background-color: #135847;
+
+}
+.cancle-btn{
+    background-color: #bf3c00;
+
+}
+.cancle-btn:hover{
+    background-color: #802f0a;
+
+}
+
+/* ==================================*******soumya css*****============================================================= */
+
+
+
+
+@media screen and (max-width:770px) {
+    .hair-styles {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #book-button{
+        margin-left: 100px;
+    }
+
+    .video-play{
+        display: grid;
+        grid-template-columns: repeat(1, fr);
+    }
+
+    .video-play>div{
+        width: 100%;
+    }
+}
+
+.slot-card{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* padding: 10px; */
+    background-color: #e6dee3e6;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.slot-card>div:nth-child(1){
+    width: 85%;
+    float: left;
+    padding: 10px;
+}
+
+.slot-card>div:nth-child(2){
+    width: 10%;
+    background-color: red;
+}
+
+.slot-card button{
+    border: none;
+    background: none;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.slot-card>div:nth-child(2):hover{
+    opacity: 0.7;
+    cursor: pointer;
+    background-color: black;
+}
+
+
+.slot-card span{
+    font-size: 14px;
+    color: red;
+}

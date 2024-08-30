@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                     <!--cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/f90c67bbfa.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="./Image/stylerLogo.png">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./Css/admin_nav.css">
+    <link rel="stylesheet" href="./Css/admin_dashboard.css">
+    <title>Styler - Admin Dashboard</title>
+
+</head>
+<body>
+     <!-- this is the preloader -->
+    <div id="preloader">
+        <i class="fa-solid fa-scissors"></i>
+      </div>
+    <header>
+        <div class="logo">
+            <a href="./admin_dashboard.html"><img src="./Image/stylerLogo.png" alt=""></a>
+        </div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="./admin_dashboard.html">Dashboard</a></li>
+                <li><a href="./admin_styler.html">Stylers</a></li>
+                <li><a href="./admin_appointments.html">Appointments</a></li>
+                <li><a href="./admin_services.html">Services</a></li>
+                <li><a href="./admin_users.html">Users</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 style="text-align: center; margin-top: 30px; margin-bottom: 30px;">Dashboard</h1>
+        <div id="dash">
+            <div>
+                <h2>Total Appointments</h2>
+                <h1 id="total-apps">0</h1>
+            </div>
+            <div>
+                <h1>Pending</h1>
+                <h1 id="pendding">0</h1>
+            </div>
+            <div>
+                <h1>Approved</h1>
+                <h1 id="approve">0</h1>
+            </div>
+            <div>
+                <h1>Completed</h1>
+                <h1 id="complete">0</h1>
+            </div>
+            <div>
+                <h1>Canceled</h1>
+                <h1 id="cancle">0</h1>
+            </div>
+            <!-- <div>
+                <h1>Todays Earning</h1>
+                <h1>&#8377; 780</h1>
+            </div> -->
+            <!-- <div>
+                <h1>Total Earning</h1>
+                <h1>&#8377; 8850</h1>
+            </div> -->
+        </div>
+
+        <h1 style="text-align: center; margin-top: 30px; margin-bottom: 30px;">Today's Appointments</h1>
+
+
+        <div id="appointments-div">
+        </div>
+    </main>
+    <section id="footer" data-aos="fade-up" data-aos-duration="1000">
+        <div class="footer">
+            <div class="logo2">
+                <img src="./Image/logo.png" alt="#">
+            </div>
+                <p>The Exclusive Unisex Salon in your town acquainted with world-class tools and professionals for stunning looks and absolute luxury.</p>
+                <div class="footer-contact">
+                    <span class="facebook"><i class="fa-brands fa-facebook"></i></span>
+                    <span  class="twitter"><i class="fa-brands fa-twitter"></i></span>
+                    <span class="instagram"><i class="fa-brands fa-instagram"></i></span>
+                </div>    
+        </div>
+    </section>
+    <div class="adminLog"><a href="./index.html">Go To User Page</a></div>
+    <p class="last-para">© 2023, Styler Salon. All rights reserved.</p>
+    
+
+    
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script src="./JavaScript/admin_nav.js"></script>
+    <script src="./JavaScript/admin_dashboard.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- <script>
+      AOS.init();
+    </script> -->
+</body>
+</html>
+<script>
+      AOS.init();
+
+    // Hide the preloader when the page is loaded
+window.addEventListener("load", () => {
+    document.querySelector("body").classList.add("loaded");
+  });
+  
+</script>

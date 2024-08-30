@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" href="./Image/stylerLogo.png">
+
+    <link rel="stylesheet" href="./Css/admin_nav.css">
+    <link rel="stylesheet" href="./Css/admin_styler.css">
+        <!-- Fontawesome CDN Link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <script src="https://kit.fontawesome.com/f90c67bbfa.js" crossorigin="anonymous"></script>
+    <title>Styler - Admin Stylers</title>
+</head>
+<body>
+    <div id="preloader">
+        <!-- this is the preloader -->
+        <!-- <i class="preloader-icon fa fa-spinner"></i> -->
+        <i class="fa-solid fa-scissors"></i>
+      </div>
+    <header>
+        <div class="logo">
+            <a href="./admin_dashboard.html"><img src="./Image/stylerLogo.png" alt=""></a>
+        </div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="./admin_dashboard.html">Dashboard</a></li>
+                <li><a href="./admin_styler.html">Stylers</a></li>
+                <li><a href="./admin_appointments.html">Appointments</a></li>
+                <li><a href="./admin_services.html">Services</a></li>
+                <li><a href="./admin_users.html">Users</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="add-details-div">
+            <h1>Add New Styler</h1>
+            <form action="">
+                <input type="text" name="" id="name" placeholder=" Name" required>
+                <input type="number" name="" id="mobile_no" placeholder="Mobile Number" required maxlength="10">
+                <input type="email" name="" id="email" placeholder="Email" required>
+                <input type="text" name="" id="city" placeholder="City" required>
+                <input type="number" name="" id="salary" placeholder="Salary" required>
+                <input type="submit"  value="Add">
+            </form>
+        </div>
+        <div id="sreach-div">
+            <h1 style="text-align: center;">Search Styler</h1>
+            <div id="search_bar">
+                
+                <i class="fa fa-search"></i>
+                <input id="input" type="text" placeholder="Search for Users ">
+            </div>
+        </div>
+
+        <div id="styler">
+            <!-- <div class="styler-cild-div">
+                <div class="styler-img-div">
+                    <img src="./Image/male-avatar-icon-flat.jpg" alt="">
+                </div>
+                <div class="styler-details-div">
+                    <h1><span>Name</span> : <span>Harish</span></h1>
+                    <h2><span>Work</span>: <span>Hair Stylist</span></h2>
+                    <h2><span>Mobile No.</span>: <span>+91 1234567890</span></h2>
+                    <h2><span>Email</span>: <span>H@gmail.com</span></h2>
+                    <h2><span>Salary</span>: <span>22,000</span></h2>
+                    <button>Edit</button>
+                    <button>Remove</button>
+                </div>
+            </div> -->
+            <!-- <div class="user-div">
+                <div>
+                    <img src="./Image/male-avatar-icon-flat.jpg" alt="user-avtar">
+                </div>
+                <div>
+                    <h1>Soumya Adhya</h1>
+                    <h2><span class="point">Work :</span> <span class="work">Hair Stylist</span></h2>
+                        <h3><span class="point">Mobile No :</span> <span class="mobile">+91 9007060666</span></h3>
+                        <h3><span class="point">Email : </span> <span class="email">s@gmail.com</span></h3>
+                        <h3><span class="point">Salary :</span> <span class="salary">&#8377;22,000</span></h3>
+                        <button class="edit-btn">Edit</button>
+                        <button class="clock-btn">Remove</button>
+                        <br>
+                    </div>
+            </div> -->
+        
+       
+            </div>
+        </div>
+    </main>
+    <section id="footer" data-aos="fade-up" data-aos-duration="1000">
+        <div class="footer">
+            <div class="logo2">
+                <img src="./Image/logo.png" alt="#">
+            </div>
+                <p>The Exclusive Unisex Salon in your town acquainted with world-class tools and professionals for stunning looks and absolute luxury.</p>
+                <div class="footer-contact">
+                    <span class="facebook"><i class="fa-brands fa-facebook"></i></span>
+                    <span  class="twitter"><i class="fa-brands fa-twitter"></i></span>
+                    <span class="instagram"><i class="fa-brands fa-instagram"></i></span>
+                </div>    
+        </div>
+    </section>
+    <div class="adminLog"><a href="./index.html">Go To User Page</a></div>
+    <p class="last-para">© 2023, Styler Salon. All rights reserved.</p>
+    
+</body>
+<script src="./JavaScript/admin_nav.js"></script>
+<script src="./JavaScript/admin_styler.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+</html>
+
+
+<script>
+    AOS.init();
+
+  // Hide the preloader when the page is loaded
+window.addEventListener("load", () => {
+  document.querySelector("body").classList.add("loaded");
+});
+
+</script>

@@ -1,0 +1,307 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+#dash{
+    margin: auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns:repeat(5,1fr);
+}
+#dash>div{
+    /* width: 18%; */
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 120px;
+    border-radius: 20px;
+    /* border: 1px solid red; */
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+#dash>div:nth-child(1){
+    background:#0353f9 ;
+}
+#dash>div:nth-child(2){
+    background:#ff9913 ;
+}
+#dash>div:nth-child(3){
+    /* background:#ea4858 ; */
+    background:#ea7345 ;
+}
+#dash>div:nth-child(4){
+    background:#0aa745 ;
+
+}
+#dash>div:nth-child(5){
+    background:#fc4828 ;
+}
+.app-child-details{
+    width: 60%;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  td {
+    /* width: 100%; */
+    padding: 6px 0px;
+    text-align: left;
+    /* border-bottom: 1px solid #ddd; */
+  }
+  
+  th {
+    /* background-color: #f2f2f2; */
+    font-weight: bold;
+    text-align: left;
+    padding-left: 10px;
+    /* width: 100%; */
+  }
+  
+#appointments-div{
+    margin: auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px 30px;
+}
+.app-child-div{
+    background-color: #5a76c1;
+    /* background-color: #bedae8; */
+    border-radius: 20px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    /* color: aliceblue; */
+}
+.app-child-div>h2{
+    margin-top: 5px;
+}
+.point{
+    /* padding: 3px; */
+    /* background: white; */
+    font-size: 23px;
+    font-weight: 700;
+    color: #252230;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+.text{
+    font-size: 22px;
+    font-weight: 700;
+    color:#fff ;
+}
+.app-child-button{
+    width: 33%;
+    
+    display: flex;
+}
+.app-child-button>button{
+    margin-top: 10px;
+    height: 45px;
+    margin-left: 5px;
+    padding: 10px 2rem;
+    border-radius: 5px;
+    border: none;
+    font-weight: 500;
+    color: whitesmoke;
+}
+.complete-tbn,.approve-btn{
+    background-color: #209f80;
+
+}
+.complete-tbn:hover,.approve-btn:hover,.completed:hover{
+    background-color: #135847;
+
+}
+.cancle-btn{
+    background-color: #bf3c00;
+
+}
+.cancle-btn:hover,.canceled:hover{
+    background-color: #802f0a;
+
+}
+.completed{
+    width: 100%;
+    background-color: #209f80;
+
+}
+.canceled{
+    width: 100%;
+    background-color: #bf3c00;
+
+}
+.footer{
+    background-color: rgb(230,222,227,0.9);
+    grid-template-columns:repeat(1,1fr)!important;
+    text-align: center;
+    padding-top:40px;
+    padding-bottom: 40px;
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+.footer h1{
+  font-size: 40px;
+  font-weight: 600;
+}
+.footer p{
+    margin: 0px 0px 20px 0px
+}
+.footer-contact{
+    cursor: pointer;
+    font-size: 30px;
+}
+.logo2{
+    width: 200px;
+    height:150px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+.facebook:hover{
+    color:blue
+}
+.twitter:hover{
+   color:blueviolet
+}
+.instagram:hover{
+    color:red
+}
+.adminLog{
+    width:95%;
+    display:flex;
+    justify-content: flex-end;
+    margin: auto;
+    margin-top: 20px;
+}
+.adminLog a{
+   text-decoration: none;
+   background-color: rgb(230,222,227,0.9);
+   color:black;
+   font-size: 15px;
+   font-weight: 600;
+   border-radius: 10%;
+   padding:7px
+}
+.adminLog a:hover{
+    color:black;
+    background-color: gray;
+}
+.last-para{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom:10px;
+    font-weight: 600;
+}
+
+@media only screen and (max-width:1565px){
+    .app-child-details{
+        width: 80%;
+    }
+    .app-child-button{
+        width: 20%;
+        display: block;
+    }
+    .app-child-button>button{
+        
+        width: 100%;
+    }
+    
+}
+@media only screen and (max-width:1174px){
+    #dash{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .app-child-details{
+        width: 75%;
+    }
+    .app-child-button{
+        width: 25%;
+    }
+}
+@media only screen and (max-width:1080px){
+    #dash>div{
+        height: auto;
+    }
+.app-child-div{
+    display: block;
+}
+.app-child-details{
+    width: 100%;
+}
+.app-child-button{
+    width: 100%;
+}
+.app-child-button{
+    display: flex;
+}
+.app-child-button>button{
+        
+    width: 50%;
+}
+}
+@media only screen and (max-width:650px){
+    #dash{
+        grid-template-columns: repeat(2,1fr);
+    }
+    #appointments-div{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media only screen and (max-width:400px){
+    #dash{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+/* Center the preloader */
+#preloader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fafafb;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    overflow: hidden;
+    scrollbar-width: none;
+  }
+  
+  /* Rotate the loading icon */
+  .fa-solid {
+    animation: spin 2s infinite linear;
+    font-size: 8rem;
+    color:black;
+  }
+  
+  /* Rotate the preloader */
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Hide the preloader when the page is loaded */
+  .loaded #preloader {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+  }
+  

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gents Salon Service</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="./Css/gents-salon-services.css">
+    <link rel="stylesheet" href="./Css/admin_nav.css">
+
+    <link rel="icon" href="https://www.linkpicture.com/q/WhatsApp-Image-2023-03-28-at-21.21.29.jpeg">
+    <script src="https://kit.fontawesome.com/3f69d0abd1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./Css/index.css">
+    <script src="./JavaScript/index.js"></script>
+
+</head>
+
+<body>
+
+    <!-- <---- Loading Section ------>
+
+    <div id="preloader">
+        <!-- this is the preloader -->
+        <!-- <i class="preloader-icon fa fa-spinner"></i> -->
+        <i class="fa-solid fa-scissors"></i>
+    </div>
+
+    <!-- <------- Navbar Section -------->
+    <!-- <header>
+        <div class="logo">
+            <a href="./index.html"><img src="./Image/stylerLogo.png" alt=""></a>
+        </div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#">About US</a></li>
+                <li><a href="./gents-salon-services.html">Services</a></li>
+                <li><a href="#footer">Contact</a></li>
+                <li><a href="#">Offers</a></li>
+            </ul>
+        </nav>
+    </header> -->
+    <header style="position:fixed; z-index: 99;">
+        <div class="logo">
+         <a href="./index.html"><img src="./Image/stylerLogo.png" alt="#"></a>
+        </div>
+        <div class="hamburger" onClick="hamFun()">
+           <div class="line"></div>
+           <div class="line"></div>
+           <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+           <ul>
+             <li><a href="index.html">Home</a></li>
+             <li><a href="#about">About Us</a></li>
+             <li><a href="./gents-salon-services.html">Services</a></li>
+             <li id="log-sign"><a href="./login_signup.html">Signup/Login</a></li>
+             <li id="my-pro" ><a href="./myProfile.html">My Profile</a></li>
+           </ul>
+        </nav>
+     </header> 
+
+    <!-- <------ Choose Section ------>
+    <div class="section">
+        <span style="color: #c68200">MEN / </span>
+        <span>WOMEN / </span>
+        <span>CHOOSE </span>
+    </div>
+
+    <!-- <------ Video Section  and Book Appointment Section ------->
+    <div class="video-play" data-aos="fade-right">
+        <div>
+            <video src="./Image/clideo_editor_6cd33746bad44c348a7d58a560c82021.mp4" autoplay muted loop></video>
+        </div>
+        <div id="right-div">
+            <div class="book-appointment" data-aos="fade-left">
+                <div>
+                    <h1>Let's not wait for the "Perfect Look"</h1>
+                    <span>Book An Appointment Now!</span>
+                </div>
+                <div>
+                    <form action="">
+                        <select name="" id="service-type">
+                            <option value="">Service Type</option>
+                            <option value="Hair Cut">Hair Cut</option>
+                            <option value="Hair Color">Hair Color</option>
+                            <option value="Dye">Dye Your Hair</option>
+                            <option value="Hair Straightner">Straighten Your Hair</option>
+                        </select>
+                        <input type="date" placeholder="Preffered Date*" id="book-date" required>
+                        <!-- <input type="date" placeholder="Preferred Date*" id="book-date" required min="YYYY-MM-DD"> -->
+
+                        <br><br>
+                        <select name="city" id="city" required>
+                            <option value="">City*</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Kolkata">Kolkata</option>
+                            <option value="Bangalore">Bangalore</option>
+                            <option value="Chennai">Chennai</option>
+                            <option value="Kota">Kota</option>
+                        </select>
+                        <select name="time" id="slots" required>
+                            <option value="">Preferred Time*</option>
+                            <option value="9AM">09:00AM</option>
+                            <option value="10AM">11:00AM</option>
+                            <option value="2PM">02:00PM</option>
+                            <option value="4PM">04:00PM</option>
+                            <option value="6PM">06:00PM</option>
+                            <option value="9PM">09:00PM</option>
+                        </select>
+                        <input type="submit" value="Book Appointment" id="book-button">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <------- Hair Cut Style Section ---->
+
+    <div class="hair-styles" data-aos="fade-up">
+        <div>
+            <h2>Hair Cut & Finish</h2>
+            <ul>
+                <li><i class="fa fa-circle-dot"></i> Cut and Hair Care</li>
+                <li><i class="fa fa-circle-dot"></i> Shampoo Conditioning</li>
+                <li><i class="fa fa-circle-dot"></i> Head Massage</li>
+                <li><i class="fa fa-circle-dot"></i> Beard Styling</li>
+                <li><i class="fa fa-circle-dot"></i> Hair / Beard Colouring</li>
+            </ul>
+        </div>
+        <div>
+            <h2>Hair Colour</h2>
+            <ul>
+                <li><i class="fa fa-circle-dot"></i> Hair Color ( Ammonia & Ammonia Free)</li>
+                <li><i class="fa fa-circle-dot"></i> Hi-Lites</li>
+                <li><i class="fa fa-circle-dot"></i> Beard Colour</li>
+            </ul>
+        </div>
+        <div>
+            <h2>Hair Texture</h2>
+            <ul>
+                <li><i class="fa fa-circle-dot"></i> Straightening</li>
+                <li><i class="fa fa-circle-dot"></i> Smoothening</li>
+                <li><i class="fa fa-circle-dot"></i> Rebonding</li>
+                <li><i class="fa fa-circle-dot"></i> Perming</li>
+            </ul>
+        </div>
+        <div>
+            <h2>Hair Treatments</h2>
+            <ul>
+                <li><i class="fa fa-circle-dot"></i> Hair Spa</li>
+                <li><i class="fa fa-circle-dot"></i> Advance Moisturising</li>
+                <li><i class="fa fa-circle-dot"></i> Scalp Treatment</li>
+                <li><i class="fa fa-circle-dot"></i> Colour Treatment</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="beard-section" data-aos="fade-up">
+        <div>
+            <img src="https://www.lookssalon.in/public/images/innerBanner/serviceGents.jpg" alt="beards_men_img">
+        </div>
+        <div>
+            <div>
+                <h2>Skin Care</h2>
+                <ul>
+                    <li><i class="fa fa-circle-dot"></i> Clean Ups</li>
+                    <li><i class="fa fa-circle-dot"></i> Facials</li>
+                    <li><i class="fa fa-circle-dot"></i> Organic Treatments</li>
+                    <li><i class="fa fa-circle-dot"></i> Manicure</li>
+                    <li><i class="fa fa-circle-dot"></i> Pedicure</li>
+                </ul>
+            </div>
+            <div>
+                <h2>Beard Grooming</h2>
+                <ul>
+                    <li><i class="fa fa-circle-dot"></i> Beard Trim</li>
+                    <li><i class="fa fa-circle-dot"></i> Beard Colour</li>
+                    <li><i class="fa fa-circle-dot"></i> Beard Styling</li>
+                    <li><i class="fa fa-circle-dot"></i> Shave</li>
+                    <li><i class="fa fa-circle-dot"></i> Luxury Shave & Beard Spa</li>
+                </ul>
+            </div>
+        </div>
+        <!-- <button class="ladies-service-button">Ladies Services</button> -->
+    </div>
+
+
+    <div class="gents-about" data-aos="fade-up">
+        <h1>Gents Salon Services</h1>
+        <p>Styling has never been limited to women. The art of looking handsome and getting makeovers has its own story
+            for men and one cannot imagine the number of styles and treatments that can be done on these hunks.
+            Moreover, the desire to have a unique identity is everyone's' want and Styler Salon makes that possible. From
+            grooming to beauty sessions, we offer a wide range of services and treatments that every man wishes to get.
+            Our professionally trained stylists and experts leave no stone unturned to give you the best look that would
+            do all the talking and make your style better than the best!</p><br>
+
+        <p>Not only that, our experts would happily give you tips and tricks to sustain that long desired style to make
+            you feel confident and rule the world. Look Salon is a proud and award winning salon chain that has over 95
+            branches nationally and internationally to help people give them the 'Perfect Look' and flaunt it in style.
+            Our experts are constantly updated with latest trends in the fashion world and even help you suggest the
+            best look according to your personality and while we're giving you your desired look, we also ensure that
+            you have a very fruitful visit to the salon. Bring all your beauty and hair questions to us and get them
+            answered at Styler Salon. We make sure that we are using the right product and technology for your services
+            and thus you can be sure that you are availing a world-class service.</p><br>
+
+        <p>So wait no more, book your appointment today through our website or contact the nearest Looks Salon and
+            experience the magnificent way of transforming yourself.
+        </p>
+    </div>
+
+    <section id="partner" data-aos="fade-up">
+        <h1>Our Partner Brands</h1>
+        <div class="partner">
+            <div class="partner-card">
+                <img src="https://www.lookssalon.in/public/images//brands/Loreal_edited.webp" alt="#">
+            </div>
+            <div class="partner-card">
+                <img src="https://www.lookssalon.in/public/images//brands/Kerastase-Logo.webp" alt="#">
+            </div>
+            <div class="partner-card">
+                <img src="https://www.lookssalon.in/public/images//brands/olaplex-vector-logo_edited.webp" alt="#">
+            </div>
+            <div class="partner-card">
+                <img src="https://www.lookssalon.in/public/images//brands/Moroccanoil-Logo.webp" alt="#">
+            </div>
+            <div class="partner-card">
+                <img src="https://www.lookssalon.in/public/images//brands/main-brasil-cacau-order-form_edited.webp"
+                    alt="#">
+            </div>
+            <div class="partner-card">
+                <img src="https://www.lookssalon.in/public/images//brands/png-clipart-balmain-paris-logo-balmain-logo-icons-logos-emojis-iconic-brands_edited_edited.webp"
+                    alt="#">
+            </div>
+            <div class="partner-card">
+                <img src="https://www.lookssalon.in/public/images//brands/biotop.webp" alt="#">
+            </div>
+            <div class="partner-card">
+                <img src="https://www.lookssalon.in/public/images//brands/wahl-logo.webp" alt="#">
+            </div>
+            <div class="partner-card">
+                <img src="https://www.lookssalon.in/public/images//brands/dyson.webp" alt="#">
+            </div>
+            <div class="partner-card">
+                <img src="https://www.lookssalon.in/public/images//brands/wet_brush.webp" alt="#">
+            </div>
+            <div class="partner-card">
+                <img src="https://www.lookssalon.in/public/images//brands/american-crew.webp" alt="#">
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section -->
+    <section id="footer" data-aos="fade-up">
+        <div class="footer">
+            <div class="logo2">
+                <img src="../logo.png" alt="#">
+            </div>
+            <!-- <h1>STYLER</h1>
+                <h1>SALON</h1> -->
+            <p>The Exclusive Unisex Salon in your town acquainted with world-class tools and professionals for stunning
+                looks and absolute luxury.</p>
+            <div class="footer-contact">
+                <span><i class="fa-brands fa-facebook"></i></span>
+                <span><i class="fa-brands fa-twitter"></i></span>
+                <span><i class="fa-brands fa-instagram"></i></span>
+            </div>
+
+        </div>
+    </section>
+    <p class="last-para">© 2023 Styler Salon. All rights reserved.</p>
+</body>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+<!-- <script src="./JavaScript/index.js"></script> -->
+<script src="./JavaScript/gents-salon-services.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+
+</html>
+<script>
+    AOS.init();
+
+    window.addEventListener("load", () => {
+        document.querySelector("body").classList.add("loaded");
+    });
+    // function hamfun(){
+//         let humbarger=document.querySelector(".hamburger");
+// humbarger.addEventListener("click",hamFun)
+// function hamFun(){
+    // let navbar= document.querySelector(".nav-bar");
+    // navbar.classList.toggle("active")
+// }
+
+    // }
+    liFun()
+
+function liFun(){
+    let email=localStorage.getItem("email")
+    let token=localStorage.getItem("token");
+    console.log(email,token)
+    let myprofile= document.getElementById("my-pro")
+    let login_signup= document.getElementById("log-sign")
+
+    if(email===null ||token===null ){
+        login_signup.style.display="block"
+        myprofile.style.display="none"
+
+    }
+    else if(email!==null &&token!==null ){
+        login_signup.style.display="none"
+        myprofile.style.display="block"
+
+    }
+}
+</script>
