@@ -57,14 +57,6 @@
 <br>
 <p >Visit the site: <a href="https://stylerin.netlify.app/index.html">https://stylerin.netlify.app/index.html</a></p>
 
- <h3>Authors</h3>
-
-- [@Shanukajain](https://github.com/shanukajain)
-- [@chandan1506](https://github.com/chandan1506)
-- [@SoumyaAdhya007](https://github.com/SoumyaAdhya007)
-- [@Chetan-bhagat](https://github.com/Chetan-bhagat)
-- [@ankitsingh711](https://github.com/ankitsingh711)
-
 
 
  <h3> Show your support 🙌</h3>
